@@ -26,8 +26,8 @@ export const createUserAction = (data, emptyInputs) => {
             },
             body: JSON.stringify(data)
         }
-        let text = 'ПОЛЬЗОВАТЕЛЬ НЕ СОЗДАН. Пустые поля: ';
-        emptyInputs.map((string, ) =>{
+        let text = 'Пустые поля - ';
+        emptyInputs.map(string =>{
             text+=`${string}, `;
 
         });
